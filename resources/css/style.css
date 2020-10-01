@@ -1,0 +1,481 @@
+/* ----------------------------- */
+/* basic setur */
+/* ----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1,}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------- */
+/* reusable components */
+/* ----------------------------- */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* HEADING */
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2{
+   font-size: 180%;
+   word-spacing: 2px;
+   text-align: center;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #1abc9c;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* PHARAGRAPHS */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ICONS */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #1abc9c;
+    margin-bottom: 10px;
+}
+
+.small-icon{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #1abc9c;
+    font-size: 120%;
+    vertical-align: middle;
+    line-height: 120%;
+    margin-top: -6px;
+}
+
+/* BUTTONS */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    margin-right: 15px;;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #1abc9c;
+    color: #1abc9c;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]{
+    background-color: #148f77;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 1px solid #148f77;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #148f77;
+    color: #fff;
+}
+
+/* ----------------------------- */
+/* header */
+/* ----------------------------- */
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* ----------------------------- */
+/* MEALS */
+/* ----------------------------- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meals-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meals-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.meals-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+/* HOT IT WORKS */
+
+.section-steps{
+    background-color: aliceblue;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 20px;
+    
+}
+
+.works-step div{
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    float: left;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* ----------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------- */
+
+.section-testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.8))), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote:before{
+    content: '\201C';
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* ----------------------------- */
+/* SIGN UP */
+/* ----------------------------- */
+
+.section-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div:first-child{
+    background-color: rgb(221, 216, 216);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e2dede;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #10f0c3;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+/* ----------------------------- */
+/* FORM SECTION */
+/* ----------------------------- */
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0 ;
+}
+
+*:focus{
+    outline: none;
+}
+
+/* ----------------------------- */
+/* Footer */
+/* ----------------------------- */
+
+footer{
+    background-color: #333;
+    padding-top: 60px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-icons {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-icons li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+footer p {
+    color: #ccc;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
